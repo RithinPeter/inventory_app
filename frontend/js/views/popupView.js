@@ -6,7 +6,6 @@ export const popupView = {
     backdrop.classList.remove("hidden");
     modal.classList.remove("hidden");
 
-    // Smooth appearance animation
     modal.style.opacity = "0";
     modal.style.transform = "translate(-50%, -45%)";
 

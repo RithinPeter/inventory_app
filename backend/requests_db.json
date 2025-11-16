@@ -1,0 +1,150 @@
+[
+  {
+    "id": 1,
+    "item_type": "CPU",
+    "description": "Intel i5 6th Gen i5-6500",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763320348.553536,
+    "updated_at": 1763324287.171624
+  },
+  {
+    "id": 2,
+    "item_type": "CPU",
+    "description": "Intel i7 9th Gen i7-9700",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763320520.7327292,
+    "updated_at": 1763324339.4323885
+  },
+  {
+    "id": 3,
+    "item_type": "SSD",
+    "description": "120GB",
+    "os": "Windows 10",
+    "boot_mode": "UEFI (Default)",
+    "status": "Delivered",
+    "created_at": 1763320597.1416254,
+    "updated_at": 1763324982.2989693
+  },
+  {
+    "id": 4,
+    "item_type": "SSD",
+    "description": "120GB",
+    "os": "Windows 7 (32-bit)",
+    "boot_mode": "UEFI (Default)",
+    "status": "Delivered",
+    "created_at": 1763320811.952019,
+    "updated_at": 1763326195.3052437
+  },
+  {
+    "id": 5,
+    "item_type": "SSD",
+    "description": "512GB",
+    "os": "Windows 11",
+    "boot_mode": "UEFI (Default)",
+    "status": "Delivered",
+    "created_at": 1763321303.5845933,
+    "updated_at": 1763325711.566538
+  },
+  {
+    "id": 6,
+    "item_type": "RAM",
+    "description": "DDR3 8GB",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763326069.2820702,
+    "updated_at": 1763326201.6117542
+  },
+  {
+    "id": 7,
+    "item_type": "RAM",
+    "description": "DDR4 16GB",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763326637.630731,
+    "updated_at": 1763326718.9109545,
+    "notify": "none"
+  },
+  {
+    "id": 8,
+    "item_type": "GPU",
+    "description": "NVIDIA GT Series GT 1030 (Low Profile)",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763327676.6699913,
+    "updated_at": 1763327683.7015069,
+    "notify": "delivered"
+  },
+  {
+    "id": 9,
+    "item_type": "NVMe",
+    "description": "256GB",
+    "os": "Windows 7 (32-bit)",
+    "boot_mode": "UEFI (Default)",
+    "status": "Delivered",
+    "created_at": 1763327693.3976617,
+    "updated_at": 1763327890.5819833,
+    "notify": "delivered"
+  },
+  {
+    "id": 10,
+    "item_type": "RAM",
+    "description": "DDR3 4GB",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763327965.1777074,
+    "updated_at": 1763327980.6644583,
+    "notify": "delivered"
+  },
+  {
+    "id": 11,
+    "item_type": "SSD",
+    "description": "256GB",
+    "os": "Windows 10",
+    "boot_mode": "UEFI (Default)",
+    "status": "Delivered",
+    "created_at": 1763329102.2339845,
+    "updated_at": 1763329119.7301455,
+    "notify": "delivered"
+  },
+  {
+    "id": 12,
+    "item_type": "RAM",
+    "description": "DDR4 8GB",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763329725.6852212,
+    "updated_at": 1763329735.2342467,
+    "notify": "delivered"
+  },
+  {
+    "id": 13,
+    "item_type": "RAM",
+    "description": "DDR3 8GB",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763332243.2931497,
+    "updated_at": 1763335954.398626,
+    "notify": "delivered"
+  },
+  {
+    "id": 14,
+    "item_type": "HDD",
+    "description": "4TB",
+    "os": "No OS",
+    "boot_mode": "UEFI (Default)",
+    "status": "Delivered",
+    "created_at": 1763332702.69071,
+    "updated_at": 1763335808.5279038,
+    "notify": "delivered"
+  }
+]

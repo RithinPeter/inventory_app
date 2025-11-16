@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,22 +13,41 @@
     <p>Works on Windows, Ubuntu, ChromeOS</p>
   </header>
 
-  <main id="home-container"></main>
+<main id="main-layout">
+
+  <!-- TOP: Cards -->
+  <section id="card-row">
+    <div id="home-container"></div>
+  </section>
+
+  <!-- BOTTOM: Chat + Notifications -->
+  <section id="bottom-row">
+
+    <div id="chat-section">
+      <h2>Chat</h2>
+      <div id="chat-box"></div>
+      <div id="chat-input-area">
+        <input id="chat-input" type="text" placeholder="Type a message...">
+        <button id="chat-send-btn">Send</button>
+      </div>
+    </div>
+
+    <div id="notif-section">
+      <h2>Notifications</h2>
+      <div id="notif-box"></div>
+    </div>
+
+  </section>
+
+</main>
+
 
   <!-- Popup Modal -->
   <div id="popup-backdrop" class="hidden"></div>
   <div id="popup-modal" class="hidden"></div>
 
-  <!-- MVC Scripts -->
-  <script src="js/models/cpuModel.js"></script>
-  <script src="js/models/ramModel.js"></script>
-  <script src="js/models/storageModel.js"></script>
-  <script src="js/models/gpuModel.js"></script>
-
-  <script src="js/views/homeView.js"></script>
-  <script src="js/views/popupView.js"></script>
-
-  <script src="js/controllers/mainController.js"></script>
+  <!-- Only load the main controller -->
+  <script type="module" src="js/controllers/mainController.js"></script>
 
 </body>
 </html>

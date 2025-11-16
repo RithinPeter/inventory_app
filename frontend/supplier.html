@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Inventory – Supplier Dashboard</title>
+  <link rel="stylesheet" href="css/supplier.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Inventory – Supplier Dashboard</h1>
+</header>
+
+<main id="supplier-layout">
+
+  <!-- LEFT PANEL -->
+  <section id="ticket-section">
+    <h2>Incoming Requests <span id="ticket-badge">0</span></h2>
+
+    <input type="text" id="ticket-search" placeholder="Search tickets...">
+
+    <div id="ticket-list"></div>
+  </section>
+
+  <!-- RIGHT PANEL -->
+  <section id="ticket-details">
+
+    <div id="selected-ticket-box">
+      <h2>Ticket Details</h2>
+
+      <div id="ticket-info">Select a ticket...</div>
+
+      <label>Status:</label>
+      <select id="ticket-status">
+        <option>New</option>
+        <option>In Progress</option>
+        <option>Delivered</option>
+      </select>
+
+      <label>Delivered Time:</label>
+      <div id="delivery-time">--</div>
+
+      <button id="update-status-btn">Update Status</button>
+    </div>
+
+    <!-- CHAT -->
+    <div id="chat-section">
+      <h2>Chat</h2>
+      <div id="chat-box"></div>
+
+      <div id="chat-input-area">
+        <input id="chat-input" type="text" placeholder="Type a message...">
+        <button id="chat-send-btn">Send</button>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<script type="module" src="js/controllers/supplierController.js"></script>
+
+</body>
+</html>
