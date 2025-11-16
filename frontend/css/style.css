@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  padding: 20px;
+  background: #020617;
+  text-align: center;
+  border-bottom: 1px solid #1e293b;
+}
+
+#home-container {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card:hover {
+  background: #273449;
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Popup Modal */
+#popup-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+#popup-modal {
+  position: fixed;
+  background: #1e293b;
+  padding: 20px;
+  width: 320px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+}

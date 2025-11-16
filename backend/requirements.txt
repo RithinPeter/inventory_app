@@ -1,0 +1,9 @@
+flask
+flask-socketio
+eventlet
+flask-sqlalchemy
+python-dotenv
+openpyxl
+dicttoxml
+schedule
+twilio

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Inventory Request System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Inventory Request Panel</h1>
+    <p>Works on Windows, Ubuntu, ChromeOS</p>
+  </header>
+
+  <main id="home-container"></main>
+
+  <!-- Popup Modal -->
+  <div id="popup-backdrop" class="hidden"></div>
+  <div id="popup-modal" class="hidden"></div>
+
+  <!-- MVC Scripts -->
+  <script src="js/models/cpuModel.js"></script>
+  <script src="js/models/ramModel.js"></script>
+  <script src="js/models/storageModel.js"></script>
+  <script src="js/models/gpuModel.js"></script>
+
+  <script src="js/views/homeView.js"></script>
+  <script src="js/views/popupView.js"></script>
+
+  <script src="js/controllers/mainController.js"></script>
+
+</body>
+</html>
