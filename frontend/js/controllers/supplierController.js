@@ -31,7 +31,8 @@ function renderTicketList() {
   const q = ticketSearchEl.value.toLowerCase();
   ticketListEl.innerHTML = "";
 
-  tickets
+  [...tickets]                 // copy array
+    .reverse()                 // NEWEST FIRST
     .filter(t =>
       t.item_type.toLowerCase().includes(q) ||
       t.description.toLowerCase().includes(q)
@@ -48,6 +49,7 @@ function renderTicketList() {
       ticketListEl.appendChild(div);
     });
 }
+
 
 // ================= OPEN TICKET =================
 function openTicket(t) {
@@ -103,3 +105,40 @@ function updateBadge() {
 // ================= START POLLING =================
 fetchTickets();
 setInterval(fetchTickets, 3000);
+
+/* =====================
+      CHAT — SUPPLIER 
+=======================*/
+// Get chat UI elements
+const chatBox = document.getElementById("chat-box");
+const chatInput = document.getElementById("chat-input");
+const chatSend = document.getElementById("chat-send-btn");
+
+// Open WebSocket
+const chatSocket = new WebSocket("ws://127.0.0.1:8001/ws/chat");
+
+// Receive messages
+chatSocket.onmessage = (event) => {
+    appendChatBubble(event.data, "received");
+};
+
+// Send message
+chatSend.addEventListener("click", () => {
+  let text = chatInput.value.trim();
+  if (!text) return;
+
+  chatSocket.send(ROLE + ": " + text);   // key part
+  appendChatBubble("You: " + text, "sent");
+
+  chatInput.value = "";
+});
+
+// UI helper
+function appendChatBubble(msg, type) {
+  const div = document.createElement("div");
+  div.className = "msg " + type;
+  div.innerText = msg;
+
+  chatBox.appendChild(div);
+  chatBox.scrollTop = chatBox.scrollHeight;
+}

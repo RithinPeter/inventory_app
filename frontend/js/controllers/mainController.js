@@ -361,3 +361,39 @@ async function checkDeliveryStatus() {
 
 // check every 3 seconds
 setInterval(checkDeliveryStatus, 3000);
+
+
+/* =====================
+      CHAT — REQUESTER 
+=======================*/
+// Get chat UI elements
+
+
+// Open WebSocket
+const chatSocket = new WebSocket("ws://127.0.0.1:8001/ws/chat");
+
+// Receive messages
+chatSocket.onmessage = (event) => {
+    appendChatBubble(event.data, "received");
+};
+
+// Send message
+chatSend.addEventListener("click", () => {
+  let text = chatInput.value.trim();
+  if (!text) return;
+
+  chatSocket.send(ROLE + ": " + text);   // key part
+  appendChatBubble("You: " + text, "sent");
+
+  chatInput.value = "";
+});
+
+// UI helper
+function appendChatBubble(msg, type) {
+  const div = document.createElement("div");
+  div.className = "msg " + type;
+  div.innerText = msg;
+
+  chatBox.appendChild(div);
+  chatBox.scrollTop = chatBox.scrollHeight;
+}

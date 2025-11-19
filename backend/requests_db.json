@@ -146,5 +146,71 @@
     "created_at": 1763332702.69071,
     "updated_at": 1763335808.5279038,
     "notify": "delivered"
+  },
+  {
+    "id": 15,
+    "item_type": "CPU",
+    "description": "AMD Ryzen9 5th Gen Ryzen 9 5950X",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763336115.940655,
+    "updated_at": 1763339699.4618871,
+    "notify": "delivered"
+  },
+  {
+    "id": 16,
+    "item_type": "CPU",
+    "description": "Intel i5 6th Gen i5-6500",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763339682.696031,
+    "updated_at": 1763340998.088893,
+    "notify": "delivered"
+  },
+  {
+    "id": 17,
+    "item_type": "SSD",
+    "description": "2TB",
+    "os": "Windows 11",
+    "boot_mode": "UEFI (Default)",
+    "status": "Delivered",
+    "created_at": 1763340971.9313686,
+    "updated_at": 1763341001.9360366,
+    "notify": "delivered"
+  },
+  {
+    "id": 18,
+    "item_type": "RAM",
+    "description": "DDR5 16GB",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763341113.2164764,
+    "updated_at": 1763341461.621849,
+    "notify": "delivered"
+  },
+  {
+    "id": 19,
+    "item_type": "CPU",
+    "description": "Intel i3 4th Gen i3-4130",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763341427.24815,
+    "updated_at": 1763341469.5638998,
+    "notify": "delivered"
+  },
+  {
+    "id": 20,
+    "item_type": "RAM",
+    "description": "DDR5 16GB",
+    "os": null,
+    "boot_mode": null,
+    "status": "Delivered",
+    "created_at": 1763342979.8547862,
+    "updated_at": 1763342996.998044,
+    "notify": "delivered"
   }
 ]

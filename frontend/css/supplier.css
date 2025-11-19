@@ -42,10 +42,11 @@ header {
   color: white;
 }
 
+/* FIX: Make scrollable */
 #ticket-list {
   margin-top: 12px;
+  height: calc(100vh - 250px);
   overflow-y: auto;
-  flex: 1;
   background: #0f172a;
   padding: 10px;
   border-radius: 10px;
@@ -128,8 +129,9 @@ header {
   flex-direction: column;
 }
 
+/* FIX: Increase chat size */
 #chat-box {
-  flex: 1;
+  height: 260px;        /* FIXED GOOD SIZE */
   overflow-y: auto;
   background: #0f172a;
   padding: 12px;

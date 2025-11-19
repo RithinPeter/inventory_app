@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi import WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List
@@ -105,3 +106,23 @@ def notify_status(ticket_id: int):
         if r["id"] == ticket_id:
             return {"status": r.get("notify", "none")}
     return {"status": "none"}
+
+#chat-code
+
+clients = []
+
+@app.websocket("/ws/chat")
+async def chat_ws(ws: WebSocket):
+    await ws.accept()
+    clients.append(ws)
+
+    try:
+        while True:
+            data = await ws.receive_text()
+
+            # Broadcast to all clients
+            for c in clients:
+                await c.send_text(data)
+
+    except WebSocketDisconnect:
+        clients.remove(ws)
